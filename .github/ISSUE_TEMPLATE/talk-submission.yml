@@ -1,6 +1,6 @@
 name: Call for Paper Submission
 description: Submit your talk proposal for our upcoming event.
-title: "[Talk Submission] - {{ talk_title }}"
+title: "Talk Submission - {{ talk_title }}"
 labels: 
   - talk-submission
 body:
@@ -63,24 +63,24 @@ body:
     validations:
       required: false
 
-  - type: checkboxes
+  - type: dropdown
     id: preferred_length
     attributes:
-      label: Preferred session length
-      description: Select the length of your presentation.
+      label: Select the length of your presentation.
       options:
-        - label: 25 minutes
-        - label: 30 minutes
-        - label: 45 minutes
-        - label: 1 hour
-        - label: More than 1 hour
+        - 25 minutes
+        - 30 minutes
+        - 45 minutes
+        - 1 hour
+        - More than 1 hour
+      default: 3
     validations:
       required: true
 
   - type: checkboxes
     id: preferred_month
     attributes:
-      label: Preferred Month to Present
+      label: Preferred Month(s) to Present
       description: Select the months you would be available to present.
       options:
         - label: January
