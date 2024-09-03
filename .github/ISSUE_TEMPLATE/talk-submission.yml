@@ -1,0 +1,109 @@
+name: Call for Paper Submission
+description: Submit your talk proposal for our upcoming event.
+title: "[Talk Submission] - {{ talk_title }}"
+labels: 
+  - talk-submission
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for your interest in speaking at our event! Please fill out the form below to submit your talk proposal.
+
+  - type: input
+    id: name
+    attributes:
+      label: Full Name
+      description: Enter your full name.
+      placeholder: John Doe
+    validations:
+      required: true
+
+  - type: input
+    id: email
+    attributes:
+      label: Email Address
+      description: Enter your email address for further communication.
+      placeholder: john.doe@example.com
+    validations:
+      required: true
+
+  - type: input
+    id: social_linkedin
+    attributes:
+      label: LinkedIn Profile
+      description: Enter your LinkedIn profile URL for social media promotion.
+      placeholder: https://www.linkedin.com/in/william-liebenberg/
+    validations:
+      required: false
+
+  - type: input
+    id: talk_title
+    attributes:
+      label: Talk Title
+      description: Enter the title of your talk.
+      placeholder: "The Future of Web Development"
+    validations:
+      required: true
+
+  - type: textarea
+    id: talk_abstract
+    attributes:
+      label: Talk Abstract
+      description: Provide a brief description of your talk.
+      placeholder: "In this talk, we will explore..."
+    validations:
+      required: true
+
+  - type: input
+    id: target_audience
+    attributes:
+      label: Target Audience
+      description: Who is this talk intended for?
+      placeholder: "Junior Developers, Tech Leads, etc."
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: preferred_length
+    attributes:
+      label: Preferred session length
+      description: Select the length of your presentation.
+      options:
+        - label: 25 minutes
+        - label: 30 minutes
+        - label: 45 minutes
+        - label: 1 hour
+        - label: More than 1 hour
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: preferred_month
+    attributes:
+      label: Preferred Month to Present
+      description: Select the months you would be available to present.
+      options:
+        - label: January
+        - label: February
+        - label: March
+        - label: April
+        - label: May
+        - label: June
+        - label: July
+        - label: August
+        - label: September
+        - label: October
+        - label: November
+        - label: December
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: filming_consent
+    attributes:
+      label: Filming Consent
+      description: Do you agree to be filmed at the event?
+      options:
+        - label: "Yes, I agree to be filmed."
+    validations:
+      required: true
