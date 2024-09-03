@@ -45,6 +45,15 @@ body:
     validations:
       required: false
 
+  - type: input
+    id: social_xtwitter
+    attributes:
+      label: X/Twitter Profile
+      description: Enter your X/Twitter profile URL for social media promotion.
+      placeholder: https://x.com/william_dotnet/
+    validations:
+      required: false
+
   - type: markdown
     attributes:
       value: |
