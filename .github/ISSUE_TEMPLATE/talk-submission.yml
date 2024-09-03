@@ -39,7 +39,7 @@ body:
   - type: input
     id: social_linkedin
     attributes:
-      label: LinkedIn Profile
+      label: LinkedIn profile
       description: Enter your LinkedIn profile URL for social media promotion.
       placeholder: https://www.linkedin.com/in/william-liebenberg/
     validations:
@@ -48,9 +48,17 @@ body:
   - type: input
     id: social_xtwitter
     attributes:
-      label: X/Twitter Profile
+      label: X/Twitter profile
       description: Enter your X/Twitter profile URL for social media promotion.
       placeholder: https://x.com/william_dotnet/
+    validations:
+      required: false
+
+  - type: input
+    id: social_other
+    attributes:
+      label: Other social platform profile
+      description: Enter your social profile URL for social media promotion.
     validations:
       required: false
 
