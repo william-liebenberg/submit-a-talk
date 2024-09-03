@@ -77,6 +77,11 @@ body:
     validations:
       required: true
 
+  - type: markdown
+    attributes:
+      value: |
+        Please select the preferred month(s) you would be available to present. We might request a specific month based on your choice and our event schedule.
+  
   - type: checkboxes
     id: preferred_month
     attributes:
@@ -97,6 +102,11 @@ body:
         - label: December
     validations:
       required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        Our events are filmed and shared online. Please indicate if you agree or disagree to be filmed at the event.
 
   - type: dropdown
     id: filming_consent
