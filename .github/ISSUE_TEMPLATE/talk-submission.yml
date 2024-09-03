@@ -12,6 +12,12 @@ body:
         
         Please fill out the form below to submit your talk proposal.
 
+  - type: markdown
+    attributes:
+      value: |
+        ## Your details
+        Please provide your full name and email address so we can contact you regarding your talk proposal.
+    
   - type: input
     id: name
     attributes:
@@ -38,6 +44,12 @@ body:
       placeholder: https://www.linkedin.com/in/william-liebenberg/
     validations:
       required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        ## Talk details
+        Please provide the details of your talk proposal.
 
   - type: input
     id: talk_title
