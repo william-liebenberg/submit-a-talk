@@ -98,12 +98,13 @@ body:
     validations:
       required: true
 
-  - type: checkboxes
+  - type: dropdown
     id: filming_consent
     attributes:
-      label: Filming Consent
-      description: Do you agree to be filmed at the event?
+      label: Do you agree to be filmed at the event?
       options:
-        - label: "Yes, I agree to be filmed."
+        - Yes, I agree to be filmed.
+        - No, I do not agree to be filmed.
+      default: 0
     validations:
       required: true
