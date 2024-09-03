@@ -80,6 +80,7 @@ body:
   - type: markdown
     attributes:
       value: |
+        ---
         Please select the preferred month(s) you would be available to present. We might request a specific month based on your choice and our event schedule.
   
   - type: checkboxes
