@@ -81,7 +81,9 @@ body:
     attributes:
       value: |
         ## Preferred Month(s) to Present
-        Please select the preferred month(s) you would be available to present. We might request a specific month based on your choice and our event schedule.
+        Please select the preferred month(s) you would be available to present. 
+        > [!NOTE] 
+        > We might request a specific month based on your choice and our event schedule.
   
   - type: checkboxes
     id: preferred_month
