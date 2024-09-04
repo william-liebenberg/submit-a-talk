@@ -160,6 +160,6 @@ body:
       options:
         - Yes, I agree to be filmed.
         - No, I do not agree to be filmed.
-      default: 0
+      default: 1
     validations:
       required: true
